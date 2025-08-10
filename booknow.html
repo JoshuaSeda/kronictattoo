@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Now - Kronic Tattoo</title>
+  <link rel="stylesheet" href="booknow.css" />
+  <link rel="icon" type="image/png" href="images/bookformlogo.png" />
+</head>
+<body>
+  <!--Loader-->
+  <div id="loader">
+    <div class="loader-logo">
+        <img src="images/logo.png" alt="Loading" />
+    </div>
+  </div>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left" id="logo-btn">
+        <img src="images/logo.png" alt="Logo" class="logo-img" />
+        <span class="logo-text"><a href="#">KRONIC TATTOO</a></span>
+      </div>
+      <ul class="nav-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="aftercare.html">AFTERCARE</a></li>
+        <li><a href="tattoos.html">TATTOOS</a></li>
+        <li><a href="flashtattoos.html">FLASH TATTOOS</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+   <!-- Page Title -->
+  <div class="page-title-wrap">
+    <h1 class="page-title">BOOK NOW!</h1>
+  </div>
+
+  <!--Book Now-->
+  <div class="appointment-wrapper">
+  <h2 class="form-header">Kronic Tattoo Appointment Form</h2>
+  
+  <div class="form-columns">
+    <!-- Left Column -->
+    <form class="form-left" action="submit_form.php" method="POST">
+      <label for="name">Name :</label>
+      <input type="text" id="name" name="name">
+
+      <label for="number">Number :</label>
+      <input type="tel" id="number" name="number">
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email">
+
+      <label for="date">Date :</label>
+      <input type="date" id="date" name="date">
+
+      <label for="style">Style :</label>
+      <select id="style" name="style">
+        <option value="Flash 1">Flash 1</option>
+        <option value="Flash 2">Flash 2</option>
+        <option value="Flash 3">Flash 3</option>
+        <option value="none">none</option>
+      </select>
+
+      <button type="submit">BOOK NOW!</button>
+    </form>
+
+    <!-- Right Column -->
+    <div class="form-right">
+      <img src="images/bookformlogo.png" alt="Kronic Tattoo Logo">
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- FOOTER -->
+  <div class="hero-footer">
+    <!-- Copyright in center for mobile and desktop -->
+    <div class="copyright">
+      © 2025 KRONIC TATTOO
+    </div>
+    
+    <!-- Social icons and "Contact Us" will show on desktop, hidden on mobile -->
+    <div class="contact">Contact Us</div>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">
+        <img src="facebook.png" alt="Facebook" class="icon">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="instagram.png" alt="Instagram" class="icon">
+      </a>
+    </div>
+  </div>
+
+  <script>
+     //loader
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    setTimeout(() => {
+      loader.style.opacity = "0";
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 500); // match CSS transition
+    }, 1000); // ⏱ Loader duration
+  });
+  </script>
+
+  
+
+  
+</body>
+</html>

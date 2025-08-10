@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>After Care - Kronic Tattoo</title>
+  <link rel="stylesheet" href="aftercare.css" />
+  <link rel="icon" type="image/png" href="images/bookformlogo.png" />
+</head>
+<body>
+  <!--Loader-->
+  <div id="loader">
+    <div class="loader-logo">
+        <img src="images/logo.png" alt="Loading" />
+    </div>
+  </div>
+  <!--Navbar-->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left" id="logo-btn">
+        <img src="images/logo.png" alt="Logo" class="logo-img" />
+        <span class="logo-text"><a href="#">KRONIC TATTOO</a></span>
+      </div>
+      <ul class="nav-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="tattoos.html">TATTOOS</a></li>
+        <li><a href="flashtattoos.html">FLASH TATTOOS</a></li>
+        <li><a href="booknow.html">BOOK NOW</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- AFTER CARE SECTION -->
+    <section class="aftercare-section">
+      <div class="aftercare-container">
+        <h1>AFTER CARE !</h1>
+        <div class="columns">
+          <!-- DO's -->
+          <div class="dos">
+            <h2>DO’ s</h2>
+            <ul>
+              <li>Follow your tattoo artist’s instructions.</li>
+              <li>Keep it clean using lukewarm water and fragrance-free antibacterial soap.</li>
+              <li>Pat it dry using a clean paper towel or air dry it.</li>
+              <li>Apply a thin layer of artist-recommended ointment.</li>
+              <li>Moisturize 2–3 times daily. Never overdo it.</li>
+              <li>Allow it to breathe after the first bandage is removed.</li>
+              <li>Wear loose clothing to prevent irritation.</li>
+              <li>Avoid direct sunlight during healing; use sunscreen after healing.</li>
+              <li>Stay hydrated and maintain a healthy lifestyle.</li>
+            </ul>
+          </div>
+
+          <!-- DON'Ts -->
+          <div class="donts">
+            <h2>DON’ Ts</h2>
+            <ul>
+              <li>Don’t scratch, pick, or peel the tattoo.</li>
+              <li>Don’t soak it in water (e.g., pools, baths) for 2–3 weeks.</li>
+              <li>Don’t re-bandage unless instructed by your artist.</li>
+              <li>Don’t use petroleum jelly or heavy creams.</li>
+              <li>Don’t expose it to sweat and dirt.</li>
+              <li>Don’t let pets touch or lick the tattooed area.</li>
+              <li>Don’t clean it with alcohol or hydrogen peroxide.</li>
+              <li>Don’t rush the healing process be patient.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+ <!-- FOOTER -->
+  <div class="hero-footer">
+    <!-- Copyright in center for mobile and desktop -->
+    <div class="copyright">
+      © 2025 KRONIC TATTOO
+    </div>
+    
+    <!-- Social icons and "Contact Us" will show on desktop, hidden on mobile -->
+    <div class="contact">Contact Us</div>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">
+        <img src="facebook.png" alt="Facebook" class="icon">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="instagram.png" alt="Instagram" class="icon">
+      </a>
+    </div>
+  </div>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bg-music" loop>
+    <source src="audio/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('bg-music');
+      const logoBtn = document.getElementById('logo-btn');
+
+      logoBtn.style.cursor = 'pointer';
+      logoBtn.addEventListener('click', () => {
+        if (audio.paused) {
+          audio.volume = 0.3;
+          audio.play().catch(err => console.error('Playback failed:', err));
+        } else {
+          audio.pause();
+        }
+      });
+    });
+
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      setTimeout(() => {
+        loader.style.opacity = "0";
+        setTimeout(() => {
+          loader.style.display = "none";
+        }, 500);
+      }, 1000);
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flash Tattoos - Kronic Tattoo</title>
+  <link rel="stylesheet" href="flashtattoos.css" />
+  <link rel="icon" type="image/png" href="images/bookformlogo.png" />
+</head>
+<body>
+  <!--Loader-->
+  <div id="loader">
+    <div class="loader-logo">
+        <img src="images/logo.png" alt="Loading" />
+    </div>
+  </div>
+  <!-- NAVBAR -->
+  <header>
+    <!--Navbar-->
+  <header>
+    <nav class="navbar">
+      <div class="nav-left" id="logo-btn">
+        <img src="images/logo.png" alt="Logo" class="logo-img" />
+        <span class="logo-text"><a href="#">KRONIC TATTOO</a></span>
+      </div>
+      <ul class="nav-right">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+        <li><a href="aftercare.html">AFTERCARE</a></li>
+        <li><a href="tattoos.html">TATTOOS</a></li>
+        <li><a href="booknow.html">BOOK NOW</a></li>
+      </ul>
+    </nav>
+  </header>
+   <!-- Page Title -->
+  <div class="page-title-wrap">
+    <h1 class="page-title">FLASH TATTOOS</h1>
+  </div>
+  <!--Flash Tattoos-->
+  <div class="gallery-wrapper">
+    <div class="gallery">
+      <div class="gallery-item">
+        <p>Flash 1</p>
+        <a href="booknow.html"><img src="FLASH TATTOOS/flash1.png" alt="Black & Grey Tattoo" /></a>
+        <p>₱ 1500.00</p>
+      </div>
+      <div class="gallery-item">
+        <p>Flash 2</p>
+        <a href="booknow.html"><img src="FLASH TATTOOS/flash2.png" alt="Neo Traditional Tattoo" /></a>
+        <p>₱ 1500.00</p>
+      </div>
+      <div class="gallery-item">
+        <p>Flash 2</p>
+        <a href="booknow.html"><img src="FLASH TATTOOS/flash3.png" alt="Minimalist Tattoo" /></a>
+        <p>₱ 1500.00</p>
+      </div>
+    </div>
+  </div>
+
+
+
+   <!-- FOOTER -->
+  <div class="hero-footer">
+    <!-- Copyright in center for mobile and desktop -->
+    <div class="copyright">
+      © 2025 KRONIC TATTOO
+    </div>
+    
+    <!-- Social icons and "Contact Us" will show on desktop, hidden on mobile -->
+    <div class="contact">Contact Us</div>
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank">
+        <img src="facebook.png" alt="Facebook" class="icon">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="instagram.png" alt="Instagram" class="icon">
+      </a>
+    </div>
+  </div>
+
+  <script>
+     //loader
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    setTimeout(() => {
+      loader.style.opacity = "0";
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 500); // match CSS transition
+    }, 1000); // ⏱ Loader duration
+  });
+  </script>
+
+  
+
+  
+</body>
+</html>
